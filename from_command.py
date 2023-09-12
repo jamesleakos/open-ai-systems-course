@@ -1,5 +1,5 @@
 import sys
-from llm_interface import get_completion
+from utilities.llm_interface import get_completion
 
 # This script allows you to use the get_completion function from the command line.
 # It takes one argument: the prompt you want to complete.

@@ -36,4 +36,9 @@ def get_completion_from_messages(
         "total_tokens": response["usage"]["total_tokens"],
     }
 
-    return content, token_dict
+    return content
+
+
+def get_moderation(input):
+    response = openai.Moderation.create(input=input)
+    return response["results"][0]
